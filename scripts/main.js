@@ -13,7 +13,7 @@
   const navMenuBar = 'navigation__menu-bar';
   const dotNavMenuBar = '.navigation__menu-bar';
   const eventElement = ['header', 'main', 'footer'];
-  
+
   let navigationGuard = 0; // make sure that eventListeners are created only once
 
   const navBehavior = function() {
@@ -25,7 +25,7 @@
       navMenu.classList.add(navMenuList);
       document.querySelector(dotNavMenuList).style.display='none';
 
-      if (document.querySelector(dotNavMenuList) && navigationGuard != 1) {
+      if (document.querySelector(dotNavMenuList) && navigationGuard !== 1) {
       
         // click the button to show the menu
         navButton.addEventListener('click', function() {
@@ -83,11 +83,13 @@
 
     // DOM element
     const slideContainer = document.querySelector('.curiosity__slides');
+    const curiositySlide = document.querySelectorAll('.curiosity__slide');
+    const curiositySlider = document.querySelector('.curiosity__slider');
 
     let interval;
     function moveSlide() {
       // check the current slide and move next slide
-      let maxMargin = -(width * (document.querySelectorAll('.curiosity__slide').length - 1));
+      let maxMargin = -(width * (curiositySlide.length - 1));
       let marginLeftValue = getComputedStyle(slideContainer).marginLeft;
       if (marginLeftValue === `${maxMargin}px`) {
         // if it's the last slide - display first slide
@@ -108,8 +110,8 @@
     };  
      
     // interaction with the user
-    document.querySelector('.curiosity__slider').addEventListener('mouseover', stopSlider);
-    document.querySelector('.curiosity__slider').addEventListener('mouseleave', startSlider);
+    curiositySlider.addEventListener('mouseover', stopSlider);
+    curiositySlider.addEventListener('mouseleave', startSlider);
 
     startSlider();
 }());
@@ -185,6 +187,8 @@
 (function() {
   // IIFE - generate lightbox after click on image in aside gallery
   const lightboxImages = document.querySelectorAll('.gallery__image');
+  const galleryLightbox = document.querySelector('.gallery__lightbox');
+  const lightboxImage = galleryLightbox.querySelector('.lightbox__image')
 
   function checkImageSize(clickedMiniature) {
     // check window size and set proper image
@@ -203,33 +207,33 @@
     // display clicked image in lightbox
       const clickedMiniature = this.getAttribute('src');
       const imageVersion = checkImageSize(clickedMiniature);
-      document.querySelector('.lightbox__image').src=`${imageVersion}`;
-      document.querySelector('.gallery__lightbox').style.display='block';
+      lightboxImage.src=`${imageVersion}`;
+      galleryLightbox.style.display='block';
 
       // hide footer__up button to not display over lightbox
-      document.querySelector('.footer__up-button').style.display='none';
+      footerUpButton.style.display='none'; // footerUpButton is a global variable
   };
 
   lightboxImages.forEach(lightboxImage => lightboxImage
     .addEventListener('click', showLightboxImage));
 
-  document.querySelector('.gallery__lightbox').addEventListener('click', function(){
-    document.querySelector('.gallery__lightbox').style.display='none';
+  galleryLightbox.addEventListener('click', function(){
+    galleryLightbox.style.display='none';
 
   // show footer__up button after closing lightbox
-  document.querySelector('.footer__up-button').style.display='inline-block';
+  footerUpButton.style.display='inline-block'; // footerUpButton is a global variable
   });
 
-  window.addEventListener('keydown', function(e){
+  window.addEventListener('keydown', function(e) {
     if (e.keyCode === 27) {
-      document.querySelector('.gallery__lightbox').style.display='none';
-      document.querySelector('.footer__up-button').style.display='inline-block';
+      galleryLightbox.style.display='none';
+      footerUpButton.style.display='inline-block'; // footerUpButton is a global variable
     };
   });
 
-  document.querySelector('.gallery__lightbox').addEventListener('click', function(e){
-    if(e.target.querySelector == '.gallery__lightbox'){
-      document.querySelector('.gallery__lightbox').className = '';
+  galleryLightbox.addEventListener('click', function(e) {
+    if(e.target.querySelector == '.gallery__lightbox') {
+      galleryLightbox.className = '';
     }
   });
 }());
@@ -270,6 +274,8 @@ document.onkeydown = function(e) {
 
 // Global function - click footer up button to scroll to the top of the page
 
-document.querySelector('.footer__up-button').addEventListener('click', function() {
+const footerUpButton = document.querySelector('.footer__up-button');
+
+footerUpButton.addEventListener('click', function() {
   window.scrollTo({top: 0, behavior:'smooth'});
 });
