@@ -1,0 +1,412 @@
+﻿<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="author" content="ag-vectivus">
+  	<title>Daruma Website - Zwyczaje</title>
+    <meta name="description" content="Strona o charakterze edukacyjny. Prezentuje historię oraz informacje na temat japońskiego obyczaju tworzenia lalki Daruma, a także innych japońskich zwyczajów noworocznych. Przybliża również samą sylwetkę Darumy.">
+    <meta name="viewport" content="width=device-width">
+  	<link rel ="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <script src="../scripts/jquery.js" defer></script>
+    <script src="../scripts/main.js" defer></script>
+  </head>
+
+  <body>
+
+    <!-- || NAVIGATION -->
+    <nav class="nav">
+
+      <ul class="navigation 
+                 navigation--display">
+
+        <li class="navigation__button 
+                   navigation__logo--width">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt=""
+              class="navigation__image">
+          </a>
+        </li>
+
+        <li class="navigation__button 
+                   navigation__image--size 
+                   js-navigation__button--show-menu">
+          <img src="../images/menu.svg" 
+            alt="" 
+            tabindex="0"
+            class="navigation__image 
+                   navigation__image--visibility">
+
+          <ul id="js-navigation__menu">
+            
+            <li class="navigation__button
+                       button--border 
+                       button--size">
+              <a href="../history/index.html" class="navigation__link 
+                                       navigation--display 
+                                       navigation--center">
+                Historia
+              </a>
+            </li>
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="index.html" class="navigation__link
+                                       navigation--display
+                                       navigation--center">
+                Zwyczaje
+              </a>
+            </li>
+          
+            <!-- <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="../gallery/index.html" class="navigation__link
+                                       navigation--display
+                                       navigation--center">
+                Przedstawienia
+              </a>
+            </li>
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="../diy/index.html" class="navigation__link
+                                       navigation--display
+                                       navigation--center">
+                DIY
+              </a>
+            </li> -->
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="#contact" class="navigation__link
+                                        navigation--display 
+                                        navigation--center">
+                Kontakt
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- || HEADER -->
+    <header class="header" id="header">
+      <div class="header__background">
+        <div class="header 
+                    header--size">
+        </div>
+      </div>
+    </header>
+
+
+    <!-- || MAIN -->
+    <main class="main">
+
+      <!-- Lightbox - display image from aside gallery -->
+      <div class="gallery__lightbox">
+        <div class="lightbox__content">
+          <img class="lightbox__image">
+        </div>  
+      </div>
+
+      <article class="main__article">
+        <section>
+          <h2 class="article__heading article__heading--h2">
+            Daruma jako talizman
+          </h2>
+
+          <p class="article__paragraph">
+            Lalki te kupuje się przeważnie z oczami bez namalowanych źrenic, „ślepą”, albowiem takie właśnie lalki, jeśli odpowiednio zostaną potraktowane – poprzez domalowanie źrenic – mają moc przynoszenia szczęścia. Najlepiej uczynić to z nadejściem Nowego Roku, w dniu własnych urodzin lub w momencie podejmowania ważnej decyzji, czy zadania. Robią to nie tylko zwykli ludzie, ale także firmy. 
+          </p>
+          <p class="article__paragraph">
+            Oczy lalki należy namalować, ale w ściśle określony sposób: jeśli chce się, aby spełnił się jakiś cel, jawne czy skryte marzenie, wyznacza się na najbliższy rok zadanie. Myśląc o nim maluje się lalce jedno oko (lewe). Namalowane oko lalki pozostaje zawsze otwarte i skupione na wyznaczonym celu. Gdy cel zostanie osiągnięty lub marzenie się spełni, domalowuje się lalce drugie oko. W ten sposób daruma uzyskuje wzrok. 
+          </p>
+          <p class="article__paragraph">
+            Po wypełnieniu misji przez darumę lub najdalej po roku, stare lalki należy zanieść do świątyni, gdzie w ognisku rozpalonym na poświęconej ziemi zostaną uroczyście spalone, aby nie przyniosły niepowodzeń. Ceremonia ta nazywa się daruma-kuyō („ceremonia żałobna ku czci darumy”). Osamotniony właściciel kupuje natomiast inną, zazwyczaj większą darumę, aby dalej przynosiła mu szczęście. 
+          </p>
+          <p class="article__paragraph">
+            Najczęstsze cele, jakie stawiają sobie Japończycy w kontekście z darumą, to zdanie egzaminów i znalezienie pracy. Z kolei handlowcy lubią wystawiać lalki daruma w swoich sklepach w charakterze talizmanów, przynoszących ich firmie sukcesy oraz przeganiających wszelkie niepowodzenia. Politycy na początku kampanii wyborczej też często kupują darumę, a jeśli odniosą sukces, wydają przyjęcie, na którym uroczyście domalowują darumie drugie oko.
+          </p>
+          <p class="article__paragraph">
+            Charakterystyczny kształt tych lalek powoduje, że znaczna część z nich jest wytwarzana jako „wańki-wstańki”. Obciążone u podstawy, ilekroć przewrócone, wracają do pozycji pionowej. Ta właśnie ich cecha zdaje się być najważniejsza, bowiem uważa się, że lalka taka ma moc pomagania swemu właścicielowi w przezwyciężaniu życiowych niepowodzeń, zgodnie z powiedzeniem: „Siedem razy upaść, osiem razy się podnieść”; „choćbyś siedem razy upadał, podnieś się po raz ósmy”; „nie poddawaj się niepowodzeniom” (jap. nana korobi ya oki). 
+          </p>
+        </section>
+        <section>
+          <h3 class="article__heading article__heading--h3">
+            Kolory i interpretacje lalki
+          </h3>
+
+          <p class="article__paragraph">
+            W okresie Edo Daruma był w Japonii uważany za świętego, który chronił przed ospą i innymi groźnymi chorobami zakaźnymi. Czerwona lalka przedstawiająca Darumę z groźną miną była wówczas uważana za dobry środek odpędzający takie choroby. Stąd też malowane szaty lalek daruma najczęściej występują w kolorze czerwonym. Nie jest to jednak regułą. Obecnie można spotkać lalki nie tylko pomalowane czterema innymi kolorami z pięciu głównych (jap. goshiki lub goshoku): niebieski, żółty, czerwony, biały, czarny, ale w o wielu więcej.
+          </p>
+          <p class="article__paragraph">
+            Kolor darumy należy wybrać zależnie od celu, jaki chce się osiągnąć. Można też kupić zestaw w kilku, wybranych kolorach. Są różne i każdemu z nich przypisywane są odmienne cechy, są też często w różny sposób interpretowane, w zależności m.in. od regionu kraju: 
+            <ul class="article__paragraph">
+              <li class="paragraph--no-indent article__list--margin-top">czerwony kolor symbolizuje szczęście, powodzenie, zwycięstwo, długie życie i ochronę przed chorobami;</li>
+              <li class="paragraph--no-indent article__list--margin-top">białe darumy zapewniają czystość umysłu, przez co mogą pomagać w zdawaniu egzaminów. Nadają się także na prezent ślubny;</li>
+              <li class="paragraph--no-indent article__list--margin-top">niebieskie dają spokój i koncentrację, mają utrzymywać umysł w stanie ciągłego poszukiwania, a przez to mogą pomagać w nauce i pracy;</li>
+              <li class="paragraph--no-indent article__list--margin-top">żółte i złote przynoszą bezpieczeństwo, powodzenie, sukces i pieniądze;</li>
+              <li class="paragraph--no-indent article__list--margin-top">czarne zabezpieczają przed złem i złośliwymi demonami, przynoszą sukces w biznesie;</li>
+              <li class="paragraph--no-indent article__list--margin-top">srebrne to rosnący status społeczny;</li>
+              <li class="paragraph--no-indent article__list--margin-top">różowe sprzyjają miłości i romansom;</li>
+              <li class="paragraph--no-indent article__list--margin-top">pomarańczowe oznaczają sukcesy w szkole;</li>
+              <li class="paragraph--no-indent article__list--margin-top">zielone wpływają na zdrowie i dobrą kondycję.</li>
+            </ul>
+          </p>
+	        <p class="article__paragraph">
+            Do produkcji lalek używana jest najczęściej masa z papier-mâché (tradycyjnie, spreparowany odpowiednio papier japoński washi, czy też zgodnie z obecną tendencją, pochodzący z recyklingu) lub rzeźbione w drewnie jako kokeshi. Szczególnych umiejętności wymaga malowanie rysów twarzy lalki, ponieważ każdy egzemplarz darumy powinien mieć swoją własną, odrębną osobowość. Rysy twarzy darumy sprawiają często wrażenie miny srogiej i zawziętej, czasami jednak przyjaznej i życzliwej. W zasadzie trudno spotkać dwie identycznie darumy. Mogą one być różnej wielkości. 
+          </p>
+	        <p class="article__paragraph">
+            Ceny lalek daruma wynoszą od kilkuset do kilkudziesięciu tysięcy jenów. Lalkę taką można nabyć w każdym japońskim sklepie z pamiątkami oraz w świątyniach w całej Japonii. Najpopularniejsze lalki daruma pochodzą ze świątyni Shōrinzan Daruma-ji[5] w Takasaki (prefektura Gunma). Innym miejscem cieszącym się wielką popularnością i kilkusetletnią sławą jest targowisko lalek daruma w miejscowości Haijima blisko Hachiōji, na zachód od centrum Tokio. Wydarzeniem roku, przyciągającym ponad 100 tys. gości, są targi daruma organizowane w dniach 3–4 marca, w świątyni buddyjskiej Jindai-ji, usytuowanej w mieście Chōfu[6], należącym do aglomeracji tokijskiej.
+          </p>
+          <p class="article__paragraph">
+            Z biegiem czasu tradycja, historia, pochodzenie, kolory lalki zmieniały się, tworząc także wersje lokalne. Jedną z największych zmian było jej przekształcenie w wizerunek żeński. Powstały: hime-daruma („daruma księżniczka”), onna-daruma („daruma kobieta”). Interpretacje darumy ożywiły także pary: dziewczynka i chłopiec, czy Daruma jako Hello Kitty. 
+          </p>
+	        <p class="article__paragraph">
+            Proces tworzenia nowych interpretacji rozpoczął się już w okresie Edo, tuż po tym, jak lalka powstała. Następował wówczas wyraźny rozdział klas społecznych. Kupcy znajdowali się na dole drabiny, co skłoniło ich do stworzenia swego rodzaju mikrośrodowiska, w tym m.in. „przebrania” darumy w kobietę. Prawdopodobnie miało to na celu „wbijanie szpilek” klasie rządzącej, która przedstawiała Bodhidharmę jako męską, silną postać. Jego obrazy jako kobiety stały się relatywnie powszechne, stając się przedmiotem także satyrycznych skojarzeń. Zdolność darumy do wstawania bez względu na to, ile razy ktoś by go położył, była jednoznacznie kojarzona z prostytutkami i ich tendencją do robienia tego samego. Pojawiły się również falliczne przedstawienia Darumy.
+          </p>
+        </section>
+
+        <p class="article__paragraph
+                  paragraph--no-indent
+                  paragraph--align-right">
+          © Źródło: 
+          <a href="https://pl.wikipedia.org/wiki/Daruma_(lalka)" class="main__link" target="_blank" rel="noopener">Bodhidharma (Daruma)</a>, 
+          <a href="https://xtools.wmflabs.org/articleinfo/pl.wikipedia.org/Daruma_(lalka)?uselang=pl#top-editors" class="main__link" target="_blank" rel="noopener">Autorzy</a>, 
+          licencja: 
+          <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="main__link" target="_blank" rel="noopener">[BY-SA 3.0 Deed]</a>
+        </p>
+      </article>
+
+
+      <!-- || ASIDE -->
+  	  <aside class="main__aside">
+
+        <section class="aside__curiosity">
+          <h3 class="aside__heading">
+            Ciekawostka
+          </h3>
+          <div class="curiosity__slider">
+            <ul class="curiosity__slides">
+
+              <li class="curiosity__slide">
+                <blockquote cite="https://pl.wikipedia.org/wiki/Daruma_(lalka)">
+                  Istnieje opinia, że rosyjska matrioszka powstała w XIX wieku wskutek inspiracji artystów japońskimi lalkami darumy i kokeshi.
+                </blockquote>
+              </li>
+
+              <li class="curiosity__slide">
+                <blockquote cite="https://pl.wikipedia.org/wiki/Daruma_(lalka)">
+                  Słowo yuki-daruma to po japońsku bałwan śniegowy.
+                </blockquote>
+              </li>
+
+              <li class="curiosity__slide">
+                <blockquote cite="https://pl.wikipedia.org/wiki/Daruma_(lalka)">
+                  Daruma-otoshi to gra-zabawka składająca się z nałożonych na siebie części: głowy darumy, krążków tworzących „tułów” i młoteczka.
+                </blockquote>
+              </li>
+
+            </ul>
+          </div>
+        </section>
+
+        <section class="aside__gallery">
+          <h3 class="aside__heading">
+            Galeria
+          </h3>
+          <p class="gallery__grid">
+          </p> 
+        </section>
+      </aside>
+    </main>
+
+    <!-- || FOOTER -->
+  	<footer class="footer">
+
+      <div class="footer__up-button">
+        <a href="#header">
+          <img src="../images/arrow-up.svg" alt=""
+            class="navigation__image
+                   footer__link">
+        </a>
+      </div>
+
+      <div class="footer__container">
+
+        <div class="footer__section">
+          <div class="footer__headline">
+            O stronie
+          </div>
+            <p class="footer__paragraph
+                      footer__section--border">
+              Strona ma charakter edukacyjny. Prezentuje historię oraz informacje na temat japońskiego obyczaju tworzenia lalki Daruma, a także innych japońskich zwyczajów noworocznych. Przybliża również samą sylwetkę Darumy.
+            </p>
+        </div>
+
+        <div class="footer__section">
+          <div class="footer__headline">
+            Zawartość
+          </div>
+            <ul class="footer__paragraph
+                       footer__paragraph--list">
+
+              <li>
+                <a class="js-footer__paragraph--dropdown
+                          footer--interact"
+                   tabindex="0">
+                  Ilustracje
+                </a>
+                <ul class="footer__paragraph--dropdown
+                           footer__paragraph--margin
+                           footer__paragraph--list">
+
+                  <li>
+                    favicon.ico: 
+                    <a href="http://www.freepik.com" class="footer__link">designed by Freepik</a>
+                  </li>
+
+                  <li>
+                    <span class="footer__paragraph--variable"></span>: 
+                    <a href="http://www.freepik.com" class="footer__link">designed by macrovector / Freepik</a>
+                  </li>
+
+                  <li class="footer__paragraph--list
+                             footer__paragraph--author-statement">
+                    Wyżej wymienione obrazy zostały zmodyfikowane i użyte w celu wykonania layoutu strony.
+                  </li>
+                  
+                  <li class="footer__paragraph--list
+                             footer__paragraph--author-statement">
+                    Obrazy z Galerii pochodzą z <a href="https://commons.wikimedia.org/wiki/Main_Page" class="footer__link" target="_blank" rel="noopener">Wikimedia Commons</a>.
+                  </li>
+
+                </ul>                
+              </li>
+
+              <li>
+                <a class="js-footer__paragraph--dropdown
+                          footer--interact"
+                   tabindex="0">
+                  Bibliografia
+                </a>
+                  
+                  <ul class="footer__paragraph--dropdown
+                             footer__paragraph--margin
+                             footer__paragraph--list">
+
+                    <li class="footer__paragraph--strong">
+                      Arutjunow, S., Swietłow, G., <span class="footer__paragraph--italic">Starzy i nowi bogowie Japonii,</span> Warszawa 1973.
+                    </li >
+
+                    <li class="footer__paragraph--strong">
+                      Kozyra, A., <span class="footer__paragraph--italic">Mitologia Japońska,</span> Warszawa - Bielsko-Biała 2011.
+                    </li>
+
+                    <li class="footer__paragraph--strong">
+                      Mochinaga, R., <span class="footer__paragraph--italic">Spirit and Symbol: The Japanese New Year,</span> Honolulu 1994.
+                    </li>
+                    
+                    <li class="footer__paragraph--list
+                             footer__paragraph--author-statement">
+                      Wyżej wymienione pozycje bibliograficzne są przykładowe i nie zostały użyte do wykonania niniejszej strony.
+                    </li>
+                    
+                  </ul>
+              </li>
+              
+              <!-- FOOTER CONTACT FORM -->
+              <li>
+                <a class="js-footer__paragraph--dropdown
+                          footer--interact"
+                   tabindex="0">
+                  Kontakt
+                </a>
+
+                <form action="#" method="POST" class="footer__paragraph--dropdown
+                                                      footer__paragraph--margin">
+                  <fieldset class="footer__contact-form">
+                    <legend>
+                      &nbsp;Napisz do mnie&nbsp;
+                    </legend>
+                    <ul class="footer__paragraph--list">
+
+                      <li>
+                        <label for="name" class="contact-form__label">
+                          Imię:
+                        </label>
+                        <input type="text" id="name" name="user_name" aria-required="true" disabled placeholder=" Imię..." class="contact-form__text-field">
+                      </li>
+
+                      <li>
+                        <label for="mail" class="contact-form__label">
+                          E-mail:
+                        </label>
+                        <input type="email" id="mail" name="user_mail" aria-required="true" disabled placeholder=" E-mail..." class="contact-form__text-field">
+                      </li>
+
+                      <li class="footer__paragraph--display">
+                        <label for="message" class="contact-form__label 
+                                                    paragraph--align-top">
+                          Treść:
+                        </label>
+                        <textarea id="message" name="user_message" rows="5" cols="5" aria-required="true" disabled placeholder="Formularz kontaktowy nie jest w tej chwili dostępny." class="contact-form__text-field"></textarea>
+                      </li>
+                      
+                      <li>
+                        <button type="submit" disabled class="contact-form__button">
+                          Wyślij
+                        </button>
+                      </li>
+                      
+                    </ul>
+                  </fieldset>
+                </form>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- || FOOTER (CONTINUATION) -->
+      <div id="contact" class="footer__end">
+        <div class="footer__button-wrapper">
+
+          <div class="footer__end-button"
+               data-buttonId="instagram">
+            <a href="#contact">
+              <img src="../images/instagram.svg" alt=""
+                class="navigation__image">
+            </a>
+          </div>
+
+          <div class="footer__end-button"
+               data-buttonId="facebook">
+            <a href="#contact">
+              <img src="../images/facebook.svg" alt=""
+                class="navigation__image">
+            </a>
+          </div>
+
+          <div class="footer__end-button"
+               data-buttonId="twitter">
+            <a href="#contact">
+              <img src="../images/twitter.svg" alt=""
+                class="navigation__image">
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__paragraph 
+                  footer__end--center">
+          Copyright © 2020 Daruma Website | All rights reserved.
+        </p>
+      </div>
+    </footer>    
+  </body>
+</html>

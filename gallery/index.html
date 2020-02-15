@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+
+<html lang="pl-PL">
+
+  <head>
+  	<meta charset="UTF-8">
+  	<meta name="author" content="ag-vectivus">
+  	<title>Daruma Website - Przedstawienia</title>
+    <meta name="description" content="Strona o charakterze edukacyjny. Prezentuje historię oraz informacje na temat japońskiego obyczaju tworzenia lalki Daruma, a także innych japońskich zwyczajów noworocznych. Przybliża również samą sylwetkę Darumy.">
+    <meta name="viewport" content="width=device-width">
+  	<link rel ="shortcut icon" href="../favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" type="text/css" href="../style/style.css">
+    <!-- <script src="../scripts/jquery.js" defer></script> -->
+    <script src="../scripts/main.js" defer></script>
+  </head>
+
+  <body>
+
+    <!-- || NAVIGATION -->
+    <nav class="nav">
+
+      <ul class="navigation 
+                 navigation--display">
+
+        <li class="navigation__button 
+                   navigation__logo--width">
+          <a href="../index.html">
+            <img src="../images/logo.png" alt=""
+              class="navigation__image">
+          </a>
+        </li>
+
+        <li class="navigation__button 
+                   navigation__image--size 
+                   js-navigation__button--show-menu">
+          <img src="../images/menu.svg" 
+            alt="" 
+            tabindex="0"
+            class="navigation__image 
+                   navigation__image--visibility">
+
+          <ul id="js-navigation__menu">
+            
+            <li class="navigation__button
+                       button--border 
+                       button--size">
+              <a href="index.html" class="navigation__link 
+                                       navigation--display 
+                                       navigation--center">
+                Historia
+              </a>
+            </li>
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="../customs/index.html" class="navigation__link
+                                       navigation--display
+                                       navigation--center">
+                Zwyczaje
+              </a>
+            </li>
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="../gallery/index.html" class="navigation__link
+                                       navigation--display
+                                       navigation--center">
+                Przedstawienia
+              </a>
+            </li>
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="../diy/index.html" class="navigation__link
+                                       navigation--display
+                                       navigation--center">
+                DIY
+              </a>
+            </li>
+          
+            <li class="navigation__button
+                       button--border
+                       button--size">
+              <a href="#contact" class="navigation__link
+                                        navigation--display 
+                                        navigation--center">
+                Kontakt
+              </a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </nav>
+
+    <!-- || HEADER -->
+    <header class="header" id="header">
+      <div class="header__background">
+        <div class="header 
+                    header--size">
+        </div>
+      </div>
+    </header>
+
+
+    <!-- || MAIN -->
+    <main class="main">
+
+      <article class="main__article
+                      main__article--no-border">
+        <section>
+          <h2 class="article__heading article__heading--h2">
+            Daruma - Gallery
+          </h2>
+
+          <p class="article__paragraph">
+            Tekst
+          </p>
+          <p class="article__paragraph">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/Wj-5BEhEdVA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen sandbox></iframe>
+          </p>
+        </section>
+
+        <p class="article__paragraph
+                  paragraph--no-indent
+                  paragraph--align-right">
+          © Źródło: 
+          <a href="https://pl.wikipedia.org/wiki/Bodhidharma" class="main__link" target="_blank" rel="noopener">Bodhidharma (Daruma)</a>, 
+          <a href="https://xtools.wmflabs.org/articleinfo/pl.wikipedia.org/Bodhidharma?uselang=pl#top-editors" class="main__link" target="_blank" rel="noopener">Autorzy</a>, 
+          licencja: 
+          <a href="http://creativecommons.org/licenses/by-sa/3.0/" class="main__link" target="_blank" rel="noopener">[BY-SA 3.0 Deed]</a>
+        </p>
+      </article>
+    </main>
+
+    <!-- || FOOTER -->
+  	<footer class="footer">
+
+      <div class="footer__up-button">
+        <a href="#header">
+          <img src="../images/arrow-up.svg" alt=""
+            class="navigation__image
+                   footer__link">
+        </a>
+      </div>
+
+      <div class="footer__container">
+
+        <div class="footer__section">
+          <div class="footer__headline">
+            O stronie
+          </div>
+            <p class="footer__paragraph
+                      footer__section--border">
+              Strona ma charakter edukacyjny. Prezentuje historię oraz informacje na temat japońskiego obyczaju tworzenia lalki Daruma, a także innych japońskich zwyczajów noworocznych. Przybliża również samą sylwetkę Darumy.
+            </p>
+        </div>
+
+        <div class="footer__section">
+          <div class="footer__headline">
+            Zawartość
+          </div>
+            <ul class="footer__paragraph
+                       footer__paragraph--list">
+
+              <li>
+                <a class="js-footer__paragraph--dropdown
+                          footer--interact"
+                   tabindex="0">
+                  Ilustracje
+                </a>
+                <ul class="footer__paragraph--dropdown
+                           footer__paragraph--margin
+                           footer__paragraph--list">
+
+                  <li>
+                    favicon.ico: 
+                    <a href="http://www.freepik.com" class="footer__link">designed by Freepik</a>
+                  </li>
+
+                  <li>
+                    <span class="footer__paragraph--variable"></span>: 
+                    <a href="http://www.freepik.com" class="footer__link">designed by macrovector / Freepik</a>
+                  </li>
+
+                  <li class="footer__paragraph--list
+                             footer__paragraph--author-statement">
+                    Wyżej wymienione obrazy zostały zmodyfikowane i użyte w celu wykonania layoutu strony.
+                  </li>
+                </ul>                
+              </li>
+
+              <li>
+                <a class="js-footer__paragraph--dropdown
+                          footer--interact"
+                   tabindex="0">
+                  Bibliografia
+                </a>
+                  
+                  <ul class="footer__paragraph--dropdown
+                             footer__paragraph--margin
+                             footer__paragraph--list">
+
+                    <li class="footer__paragraph--strong">
+                      Arutjunow, S., Swietłow, G., <span class="footer__paragraph--italic">Starzy i nowi bogowie Japonii,</span> Warszawa 1973.
+                    </li >
+
+                    <li class="footer__paragraph--strong">
+                      Kozyra, A., <span class="footer__paragraph--italic">Mitologia Japońska,</span> Warszawa - Bielsko-Biała 2011.
+                    </li>
+
+                    <li class="footer__paragraph--strong">
+                      Mochinaga, R., <span class="footer__paragraph--italic">Spirit and Symbol: The Japanese New Year,</span> Honolulu 1994.
+                    </li>
+                  </ul>
+              </li>
+              
+              <!-- FOOTER CONTACT FORM -->
+              <li>
+                <a class="js-footer__paragraph--dropdown
+                          footer--interact"
+                   tabindex="0">
+                  Kontakt
+                </a>
+
+                <form action="#" method="POST" class="footer__paragraph--dropdown
+                                                      footer__paragraph--margin">
+                  <fieldset class="footer__contact-form">
+                    <legend>
+                      &nbsp;Napisz do mnie&nbsp;
+                    </legend>
+                    <ul class="footer__paragraph--list">
+
+                      <li>
+                        <label for="name" class="contact-form__label">
+                          Imię:
+                        </label>
+                        <input type="text" id="name" name="user_name" aria-required="true" disabled placeholder=" Imię..." class="contact-form__text-field">
+                      </li>
+
+                      <li>
+                        <label for="mail" class="contact-form__label">
+                          E-mail:
+                        </label>
+                        <input type="email" id="mail" name="user_mail" aria-required="true" disabled placeholder=" E-mail..." class="contact-form__text-field">
+                      </li>
+
+                      <li class="footer__paragraph--display">
+                        <label for="message" class="contact-form__label 
+                                                    paragraph--align-top">
+                          Treść:
+                        </label>
+                        <textarea id="message" name="user_message" rows="5" cols="5" aria-required="true" disabled placeholder="Formularz kontaktowy nie jest w tej chwili dostępny." class="contact-form__text-field"></textarea>
+                      </li>
+                      
+                      <li>
+                        <button type="submit" disabled class="contact-form__button">
+                          Wyślij
+                        </button>
+                      </li>
+                      
+                    </ul>
+                  </fieldset>
+                </form>
+              </li>
+            </ul>
+        </div>
+      </div>
+
+      <!-- || FOOTER (CONTINUATION) -->
+      <div id="contact" class="footer__end">
+        <div class="footer__button-wrapper">
+
+          <div class="footer__end-button"
+               data-buttonId="instagram">
+            <a href="#contact">
+              <img src="../images/instagram.svg" alt=""
+                class="navigation__image">
+            </a>
+          </div>
+
+          <div class="footer__end-button"
+               data-buttonId="facebook">
+            <a href="#contact">
+              <img src="../images/facebook.svg" alt=""
+                class="navigation__image">
+            </a>
+          </div>
+
+          <div class="footer__end-button"
+               data-buttonId="twitter">
+            <a href="#contact">
+              <img src="../images/twitter.svg" alt=""
+                class="navigation__image">
+            </a>
+          </div>
+        </div>
+
+        <p class="footer__paragraph 
+                  footer__end--center">
+          Copyright © 2020 Daruma Website | All rights reserved.
+        </p>
+      </div>
+    </footer>    
+  </body>
+</html>

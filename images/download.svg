@@ -1,0 +1,10 @@
+<svg viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg" aria-labelledby="title"
+aria-describedby="desc" role="img" xmlns:xlink="http://www.w3.org/1999/xlink">
+  <title>Download</title>
+  <desc>A line styled icon from Orion Icon Library.</desc>
+  <path d="M24 35H14V2h36v33H40"
+  stroke-width="2" stroke-miterlimit="10" stroke-linecap="butt" stroke="#000000"
+  fill="none" data-name="layer2" stroke-linejoin="miter"></path>
+  <path d="M32 20v41M21 48l11 13 11-13" stroke-width="2" stroke-miterlimit="10"
+  stroke-linecap="butt" stroke="#000000" fill="none" data-name="layer1" stroke-linejoin="miter"></path>
+</svg>
