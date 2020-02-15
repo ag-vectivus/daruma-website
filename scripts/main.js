@@ -2,67 +2,73 @@
 
 // Navigation Menu
 
-const navButton = document.querySelector('.js-navigation__button--show-menu');
-const navMenu = document.getElementById('js-navigation__menu');
-const navMenuList = 'navigation__menu-list';
-const dotNavMenuList = '.navigation__menu-list';
-const navMenuBar = 'navigation__menu-bar';
-const dotNavMenuBar = '.navigation__menu-bar';
-const eventElement = ['header', 'main', 'footer'];
-let navigationGuard = 0; // make sure that eventListeners are created only once
+(function() {
+// IIFE, Navigation Menu behavior
 
-const navBehavior = function() {
-  // Check inner width and set navigation menu type
-
-  if (window.innerWidth < 800) {
-    // Create dropdown menu list (for narrower screeens)
-    navMenu.classList.remove(navMenuBar);
-    navMenu.classList.add(navMenuList);
-    document.querySelector(dotNavMenuList).style.display='none';
-    
-    if (document.querySelector(dotNavMenuList) && navigationGuard != 1) {
+  // DOM elements
+  const navButton = document.querySelector('.js-navigation__button--show-menu');
+  const navMenu = document.getElementById('js-navigation__menu');
+  const navMenuList = 'navigation__menu-list';
+  const dotNavMenuList = '.navigation__menu-list';
+  const navMenuBar = 'navigation__menu-bar';
+  const dotNavMenuBar = '.navigation__menu-bar';
+  const eventElement = ['header', 'main', 'footer'];
   
-      // click the button to show the menu
-      navButton.addEventListener('click', function() {
-        document.querySelector(dotNavMenuList).style.display='block', true;
-      });
+  let navigationGuard = 0; // make sure that eventListeners are created only once
 
-      // get cursor out of the menu list to hide it - dedicated for users using mouse
-      document.querySelector(dotNavMenuList).addEventListener('mouseleave', function() {
-        if (document.querySelector(dotNavMenuList) != null){
-          document.querySelector(dotNavMenuList).style.display='none', true;
+  const navBehavior = function() {
+    // Check inner width and set navigation menu type
+
+    if (window.innerWidth < 800) {
+      // Create dropdown menu list (for narrower screeens)
+      navMenu.classList.remove(navMenuBar);
+      navMenu.classList.add(navMenuList);
+      document.querySelector(dotNavMenuList).style.display='none';
+
+      if (document.querySelector(dotNavMenuList) && navigationGuard != 1) {
+      
+        // click the button to show the menu
+        navButton.addEventListener('click', function() {
+          document.querySelector(dotNavMenuList).style.display='block', true;
+        });
+
+        // get cursor out of the menu list to hide it - dedicated for users using mouse
+        document.querySelector(dotNavMenuList).addEventListener('mouseleave', function() {
+          if (document.querySelector(dotNavMenuList) != null){
+            document.querySelector(dotNavMenuList).style.display='none', true;
+          };
+        });
+
+        // click any place on the website (exclusive nav) to hide the menu - dedicated for touchscreen
+        for(let i = 0; i < eventElement.length; i++) {
+          document.querySelector(eventElement[i]).addEventListener('click', function() {
+            if (document.querySelector(dotNavMenuList) != null){
+              document.querySelector(dotNavMenuList).style.display='none', true;
+            };
+          });
         };
-      });
-
-      // click any place on the website (exclusive nav) to hide the menu - dedicated for touchscreen
-      for(let i = 0; i < eventElement.length; i++) {
-        document.querySelector(eventElement[i]).addEventListener('click', function() {
+      
+        // focus out the last element of the menu list to hide it - dedicated for keyboard users
+        navMenu.lastElementChild.addEventListener('focusout', function() {
           if (document.querySelector(dotNavMenuList) != null){
             document.querySelector(dotNavMenuList).style.display='none', true;
           };
         });
       };
-    
-      // focus out the last element of the menu list to hide it - dedicated for keyboard users
-      navMenu.lastElementChild.addEventListener('focusout', function() {
-        if (document.querySelector(dotNavMenuList) != null){
-          document.querySelector(dotNavMenuList).style.display='none', true;
-        };
-      });
+
+      navigationGuard++;
+
+    } else {
+      // Create horizontal menu bar (for wider screens)
+      navMenu.classList.remove(navMenuList);
+      navMenu.classList.add(navMenuBar);
+      document.querySelector(dotNavMenuBar).style.display='flex';
     };
-
-    navigationGuard++;
-
-  } else {
-    // Create horizontal menu bar (for wider screens)
-    navMenu.classList.remove(navMenuList);
-    navMenu.classList.add(navMenuBar);
-    document.querySelector(dotNavMenuBar).style.display='flex';
   };
-};
 
-navBehavior();
-window.onresize = navBehavior;
+  navBehavior();
+  window.onresize = navBehavior;
+}());
 
 
 
@@ -75,7 +81,7 @@ window.onresize = navBehavior;
     const width = 270;
     const pause = 10000;
 
-    // cache DOM elements
+    // DOM element
     const slideContainer = document.querySelector('.curiosity__slides');
 
     let interval;
@@ -233,7 +239,7 @@ window.onresize = navBehavior;
 // Footer
 
 (function() {
-  // Show and hide list in footer.
+  // IIFE, Show and hide list in footer.
   const footerParaDropdown = document.querySelectorAll('.js-footer__paragraph--dropdown');
   footerParaDropdown.forEach(footerPara => footerPara.addEventListener('click', function() {
     const footerPara = this;
@@ -242,7 +248,7 @@ window.onresize = navBehavior;
 }());
 
 (function() {
-    /* IIFE Show an information about unavailability of social media. */
+    // IIFE Show an information about unavailability of social media.
     const socialMediaButtons = document.querySelectorAll('.footer__end-button');
     socialMediaButtons.forEach(buttonId => buttonId.addEventListener('click', function() {
       let buttonId = this.getAttribute('data-buttonId');
@@ -261,3 +267,9 @@ document.onkeydown = function(e) {
     document.activeElement.click();
   }
 };
+
+// Global function - click footer up button to scroll to the top of the page
+
+document.querySelector('.footer__up-button').addEventListener('click', function() {
+  window.scrollTo({top: 0, behavior:'smooth'});
+});

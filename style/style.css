@@ -731,6 +731,9 @@ body {
 /* || CSS for wide screens */
 
 @media (min-width: 800px) {
+  .nav {
+	z-index: 1;
+  }
 
   .navigation {
 	height: 70px;
@@ -833,6 +836,11 @@ body {
   	letter-spacing: 1px;
   	line-height: 3rem;
   	text-align: left;
+  }
+
+  .aside__wrapper {
+	position: sticky;
+	top: 84px;
   }
 
   .aside__heading {
