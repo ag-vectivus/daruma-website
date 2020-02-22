@@ -181,7 +181,7 @@
     newImage.setAttribute('data-number', i);
 
     gallery.appendChild(newImage);
-  };
+  }
 }());
 
 (function() {

@@ -583,7 +583,7 @@ body {
 @media (min-width: 480px) {
 
   .navigation {
-	height: 60px;
+		height: 60px;
   }
 
   .navigation__logo--width {
@@ -592,30 +592,30 @@ body {
 
   .navigation__image--size {
 	width: 50px;
-	height: 50px;
+		height: 50px;
   }
 
   .button--size {
-	height: 50px;
+		height: 50px;
   }
 
   .navigation__menu-list {
-	left: -100px;
+		left: -100px;
   }
 
   .header__background {
-	background-image: url("../images/header-background-480w.png");
+		background-image: url("../images/header-background-480w.png");
   }
 
   .header--size {
-	padding-top: 53%;
+		padding-top: 53%;
   }
 
   .main__image-wrapper {
-	float: left;
-	width: 30%;
-	margin: 0 2rem;
-	shape-outside: circle(50%);
+		float: left;
+		width: 30%;
+		margin: 0 2rem;
+		shape-outside: circle(50%);
   }
 
   .main__image {
@@ -628,7 +628,7 @@ body {
   }
 
   .article__heading--h1 {
-	font-size: 4.6rem;
+		font-size: 4.6rem;
   }
   
   .article__heading--h2 {
@@ -650,55 +650,55 @@ body {
   }
 
   .paragraph--align-right {
-	text-align: right;
+		text-align: right;
   }
 
   .aside__heading {
-	font-size: 2.6rem;
+		font-size: 2.6rem;
   }
 
   .gallery__grid {
-	width: 400px;
-	height: 400px;
+		width: 400px;
+		height: 400px;
   }
 
   .footer__paragraph--variable::after {
-	content: "header-background-480w.png";
+		content: "header-background-480w.png";
   }
 
   .footer__up-button {
-	width: 60px;
-	height: 60px;
+		width: 60px;
+		height: 60px;
 
-	top: 60px;
+		top: 60px;
   }
 
   .footer__headline {
-	font-size: 2.6rem;
+		font-size: 2.6rem;
   }
 
   .footer__section {
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   }
 
   .contact-form__label {
-	display: inline-block;
-	width: 70px;
-	text-align: right;
+		display: inline-block;
+		width: 70px;
+		text-align: right;
   }
 
   .contact-form__text-field {
-	margin-top: 0.8rem;
-	width: 75%;
+		margin-top: 0.8rem;
+		width: 75%;
   }
 
   .footer__button-wrapper {
-	width: 70%;
-	margin: 3.2rem 0;
+		width: 70%;
+		margin: 3.2rem 0;
   }
 
   .footer__end {
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   }
 
   .footer__end-button {
@@ -711,18 +711,18 @@ body {
   .footer__end-button:focus-within,
   .footer__end-button:hover {
 
-	width: 55px;
-	height: 55px;
+		width: 55px;
+		height: 55px;
 
-	margin: 15px;
+		margin: 15px;
   }
 
   .contact-form__text-field {
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   }
 
   .contact-form__button {
-	font-size: 1.8rem;
+		font-size: 1.8rem;
   }
   
 }
@@ -732,73 +732,73 @@ body {
 
 @media (min-width: 800px) {
   .nav {
-	z-index: 1;
+		z-index: 1;
   }
 
   .navigation {
-	height: 70px;
+		height: 70px;
   }
 
   .navigation__logo--width {
-	width: 225px;
+		width: 225px;
   }
 
   .navigation__image--size {
-	width: calc(100% - 225px);
-	height: 60px;
+		width: calc(100% - 225px);
+		height: 60px;
   }
 
   .navigation__image--visibility {
-	display: none;
+		display: none;
   }
 
   .navigation__menu-bar {
-	height: 60px;
-	width: 100%;
+		height: 60px;
+		width: 100%;
 	
-	position: relative;
-	top: -2px;
-	left: unset;
+		position: relative;
+		top: -2px;
+		left: unset;
 
-	display: flex;
-	flex-flow: row wrap;
-	align-items: center;
-	justify-content: space-around;
+		display: flex;
+		flex-flow: row wrap;
+		align-items: center;
+		justify-content: space-around;
 
-	color: rgba(250, 235, 215, 1);
-	background: transparent; 
+		color: rgba(250, 235, 215, 1);
+		background: transparent; 
   }
 
   .button--border {
-	background: transparent;
-	border: none;
+		background: transparent;
+		border: none;
   }
 
   .button--size {
-	width: unset;
-	height: 100%;
+		width: unset;
+		height: 100%;
 
-	flex: 1;
+		flex: 1;
   }
 
   .navigation__link:link,
   .navigation__link:visited {
-	color: rgba(250, 235, 215, 1);
+		color: rgba(250, 235, 215, 1);
   }
   
   .navigation__link:focus,
   .navigation__link:hover,
   .navigation__link:active {
-	color: rgba(71, 74, 81, 1);
-	background: rgba(250, 235, 215, 1); 
+		color: rgba(71, 74, 81, 1);
+		background: rgba(250, 235, 215, 1); 
   }
 
   .header__background {
-	background-image: url("../images/header-background-800w.png");
+		background-image: url("../images/header-background-800w.png");
   }
 
   .header--size {
-	padding-top: 42%;
+		padding-top: 42%;
   }
 
   .main {
@@ -808,16 +808,16 @@ body {
   }
 
   .main__article {
-	border-right: 1rem solid rgba(10, 39, 58, 1);
+		border-right: 1rem solid rgba(10, 39, 58, 1);
   	flex: 4 480px;
   }
 
   .main__article--no-border {
-	border: none;
+		border: none;
   }
 
   .article__heading--h1 {
-	font-size: 5.2rem;
+		font-size: 5.2rem;
   }
   
   .article__heading--h2 {
@@ -836,74 +836,79 @@ body {
   	letter-spacing: 1px;
   	line-height: 3rem;
   	text-align: left;
-  }
+	}
+	
+	.lightbox__image {
+		position: relative;
+		max-width: 40%;
+	}
 
   .aside__wrapper {
-	position: sticky;
-	top: 84px;
+		position: sticky;
+		top: 84px;
   }
 
   .aside__heading {
-	font-size: 3.3rem;
+		font-size: 3.3rem;
   }
 
   .main__aside {
-	border-top: unset;
-	flex: 1 120px;
+		border-top: unset;
+		flex: 1 120px;
   }
 
   .gallery__grid {
-	width: 230px;
-	height: 230px;
+		width: 230px;
+		height: 230px;
   }
 
   .footer__up-button {
-	width: 70px;
-	height: 70px;
+		width: 70px;
+		height: 70px;
 
-	top: 70px;
+		top: 70px;
   }
   
   .footer__container {
-	justify-content: space-around;
-	flex-flow: row wrap;
+		justify-content: space-around;
+		flex-flow: row wrap;
   }
   
   .footer__headline {
-	font-size: 3.3rem;
+		font-size: 3.3rem;
   }
 
   .footer__section {
-	font-size: 2.2rem;
-	margin: 3.2rem 1.6rem;
-	text-align: justify;
+		font-size: 2.2rem;
+		margin: 3.2rem 1.6rem;
+		text-align: justify;
   }
 
   .footer__section--border {
-	padding-right: 3.2rem;
-	border-right: 2px solid rgba(250, 235, 215, 1);
+		padding-right: 3.2rem;
+		border-right: 2px solid rgba(250, 235, 215, 1);
   }
 
   .footer__paragraph--variable::after {
-	content: "header-background-800w.png";
+		content: "header-background-800w.png";
   }
 
   .footer__paragraph--author-statement {
-	text-align: left;
+		text-align: left;
   }
 
   .contact-form__text-field {
-	font-size: 2.2rem;
-	margin-top: 0.8rem;
-	width: 70%;
+		font-size: 2.2rem;
+		margin-top: 0.8rem;
+		width: 70%;
   }
 
   .contact-form__button {
-	font-size: 2.2rem;
+		font-size: 2.2rem;
   }
 
   .footer__button-wrapper {
-	width: 50%;
+		width: 50%;
   }
 
   .footer__end-button {
@@ -912,7 +917,7 @@ body {
   }
 
   .footer__end {
-	font-size: 2rem;
+		font-size: 2rem;
   }
 
 }
@@ -923,16 +928,16 @@ body {
 @media (min-width: 1100px) {
 
   .header__background {
-	background-image: url("../images/header-background-1100w.png");
+		background-image: url("../images/header-background-1100w.png");
   }
 
   .footer__paragraph--variable::after {
-	content: "header-background-1100w.png";
+		content: "header-background-1100w.png";
   }
 
   .contact-form__text-field {
-	margin-top: 0.8rem;
-	width: 80%;
+		margin-top: 0.8rem;
+		width: 80%;
   }
 
 }
