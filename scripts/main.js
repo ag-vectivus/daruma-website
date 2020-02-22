@@ -181,14 +181,14 @@
     newImage.setAttribute('data-number', i);
 
     gallery.appendChild(newImage);
-  }
+  };
 }());
 
 (function() {
   // IIFE - generate lightbox after click on image in aside gallery
   const lightboxImages = document.querySelectorAll('.gallery__image');
   const galleryLightbox = document.querySelector('.gallery__lightbox');
-  const lightboxImage = galleryLightbox.querySelector('.lightbox__image')
+  const lightboxImage = galleryLightbox.querySelector('.lightbox__image');
 
   function checkImageSize(clickedMiniature) {
     // check window size and set proper image

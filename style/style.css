@@ -356,7 +356,7 @@ body {
 
 .lightbox__image {
 	position: relative;
-	max-width: 80%;
+	max-width: 55%;
 	max-height: 80vh;
 	border: 0.5rem solid rgba(250, 235, 215, 1);
 	border-radius: 1rem;
